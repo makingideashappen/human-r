@@ -1,0 +1,34 @@
+{
+	"/": [
+		"src/routes/+page.server.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/about": [
+		"src/routes/+layout.ts"
+	],
+	"/blog": [
+		"src/routes/blog/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/book-of-guest": [
+		"src/routes/+layout.ts"
+	],
+	"/info/[slug]": [
+		"src/routes/info/[slug]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/media-downloads": [
+		"src/routes/+layout.ts"
+	],
+	"/posts/[slug]": [
+		"src/routes/posts/[slug]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/roadmap": [
+		"src/routes/+layout.ts"
+	],
+	"/violation": [
+		"src/routes/+layout.ts"
+	]
+}
