@@ -8,17 +8,18 @@ Thumbs.db         # Windows system files
 .env              # Root environment variable file, if any
 
 # Django-specific ignores in the `api` folder
-api/__pycache__/
-api/*.py[cod]
-api/*.pyo
-api/*.pyd
-api/db.sqlite3          # SQLite database file
-api/media/              # Django media files, if applicable
-api/staticfiles/        # Django collected static files
-api/*.pot               # Translation template files
-api/*.mo                # Compiled translation files
-api/.env                # Environment variable file specific to Django
-api/venv/               # Virtual environment for Django, if inside `api`
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+db.sqlite3          # SQLite database file
+media/              # Django media files, if applicable
+staticfiles/        # Django collected static files
+*.pot               # Translation template files
+*.mo                # Compiled translation files
+.env                # Environment variable file specific to Django
+venv/               # Virtual environment for Django, if inside `api`
+env/
 
 # Svelte-specific ignores in the `client` folder
 client/node_modules/    # Node.js dependencies
