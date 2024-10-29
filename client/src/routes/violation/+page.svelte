@@ -2,19 +2,28 @@
 	import { onMount } from 'svelte';
 	import axios from 'axios';
 	import ViolationForm from '$lib/components/ViolationForm.svelte';
+	import Bg from '../../assets/rose_blue.svg';
 
 	let user_ip = '';
 	let subject = '';
 	let message = '';
 	let recipient = '';
+	let captchaResponse = ''; // To store the reCAPTCHA token
 
+	// Function to send the email form data and CAPTCHA token
 	async function sendEmail() {
+		if (!captchaResponse) {
+			alert('Please complete the CAPTCHA');
+			return;
+		}
+
 		try {
 			const response = await axios.post('http://127.0.0.1:8000/api/send-email/', {
 				user_ip,
 				subject,
 				message,
-				recipient
+				recipient,
+				captcha: captchaResponse // Send captcha response to the backend
 			});
 
 			if (response.data.message) {
@@ -26,6 +35,8 @@
 		}
 	}
 </script>
+
+<h1>Inform violation</h1>
 
 <section class="form-container">
 	<form on:submit|preventDefault={sendEmail} class="email-form">
@@ -48,11 +59,46 @@
 				required
 			/>
 		</div>
+
 		<button type="submit">Send Email</button>
 	</form>
+
+	<img class="imageUrl1" src={Bg} alt="Peace" />
 </section>
 
 <style>
+	h1 {
+		font-size: 1.5em;
+	}
+	center {
+		margin-top: 2rem;
+	}
+	button {
+		padding: 0.5em 1em;
+		border: none;
+		background-color: #007bff;
+		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	button:disabled {
+		background-color: #ccc;
+	}
+	i {
+		font-size: 0.8rem;
+	}
+
+	.imageUrl1 {
+		position: fixed;
+		bottom: -10%;
+		left: 55%;
+		opacity: 0.071;
+		z-index: -1;
+		right: 0;
+		width: 30vw;
+	}
+
 	body {
 		font-family: Arial, sans-serif;
 		background-color: #f5f5f5;
@@ -68,11 +114,10 @@
 	}
 
 	.email-form {
-		background-color: #ffffff;
 		padding: 2em;
 		border-radius: 8px;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-		max-width: 400px;
+		max-width: 600px;
 		width: 100%;
 	}
 
@@ -113,27 +158,5 @@
 	textarea {
 		resize: vertical;
 		min-height: 100px;
-	}
-
-	button {
-		display: inline-block;
-		width: 100%;
-		padding: 0.75em;
-		border: none;
-		border-radius: 4px;
-		background-color: #007bff;
-		color: white;
-		font-size: 1em;
-		cursor: pointer;
-		transition: background-color 0.3s ease;
-	}
-
-	button:hover {
-		background-color: #0056b3;
-	}
-
-	button:disabled {
-		background-color: #ccc;
-		cursor: not-allowed;
 	}
 </style>

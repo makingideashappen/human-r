@@ -3,9 +3,9 @@ import { loadLocaleAsync } from '../i18n/i18n-util.async';
 import { setLocale } from '../i18n/i18n-svelte';
 
 export const load: LayoutLoad = async (event) => {
-    const locale = 'en';
-    await loadLocaleAsync(locale);
-    setLocale(locale);
+	const locale = 'en';
+	await loadLocaleAsync(locale);
+	setLocale(locale);
 
-    return event.data;
+	return event.data;
 };

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import type { PageServerLoad } from './$types';
 import { slugFromPath } from '$lib/slugFromPath';
-import { error } from '@sveltejs/kit';
+// import { error } from '@sveltejs/kit';
 
 const MAX_POSTS = 10;
 
@@ -42,6 +42,7 @@ export const load = async ({ params }: Parameters<PageServerLoad>[0]) => {
 
 	const info = await Promise.all(infoPromises);
 	const publishedInfo = info.filter((right) => right.published).slice(0, MAX_POSTS);
+
 	// const right = await match?.resolver?.();
 
 	// if (!right || !right.metadata.published) {

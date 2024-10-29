@@ -17,3 +17,6 @@
 <ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
 
 <svelte:component this={component} />
+
+<style>
+</style>

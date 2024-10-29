@@ -5,7 +5,7 @@ author: '.'
 date: '2024-06-18'
 published: true
 slug: /posts/about-slavery
-image: /assets/6.webp
+image: /assets/baner1.jpg
 ---
 
 <script>
@@ -33,3 +33,17 @@ For, not unmarked in Heaven’s impartial plan,
 Shall man, proud worm, contemn his fellow-man?
 
 Written in 1791 after Wilberforce and the British abolitionists had been defeated in parliament, this poem responds to the impassioned (but failed) speeches of Wilberforce and others before turning to the corrupting influence of the slave trade.
+
+slavery found in Poland is extreeme example include forced labor, forced begging, and forced criminality...
+The only accpt
+able what if slavery protects somebody
+, its questionable but a person surely want to be free
+.
+
+#msulim slave culture
+
+#italian slave justification in comparison to for example poland
+
+#africa slave cultura
+
+#slavery in asia

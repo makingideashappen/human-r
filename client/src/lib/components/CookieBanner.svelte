@@ -27,14 +27,12 @@
 
 <style>
 	.cookie-banner {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		background-color: #083e6c;
-		color: #fff;
+		z-index: 50;
+		background-color: #f7f7f7;
+		color: black;
 		padding: 1rem;
 		text-align: center;
+		border-top: 1px solid #cb2f74;
 	}
 
 	.cookie-content {
@@ -45,7 +43,7 @@
 	}
 
 	button {
-		background-color: #007bff;
+		background-color: #3c81c6;
 		color: #fff;
 		border: none;
 		padding: 0.5rem 1rem;

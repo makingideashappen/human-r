@@ -1,5 +1,5 @@
 ---
-title: 'About slavery'
+title: 'About slavery pt2'
 description: "The first blog post wasn't enough; I had to come back and write more about Svelte and SvelteKit."
 author: '.'
 date: '2024-06-18'
