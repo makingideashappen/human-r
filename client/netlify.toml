@@ -1,6 +1,6 @@
 [build]
   command = "pnpm install && pnpm run build"
-  publish = "pnpm build" 
+  publish = "build" 
 
 [build.environment]
   PNPM_VERSION = "8.15.9"
