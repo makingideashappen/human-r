@@ -1,6 +1,7 @@
 [build]
   command = "pnpm install && pnpm run build"
-  publish = "build" 
+  publish = "pnpm add -D sass
+build" 
 
 [build.environment]
   PNPM_VERSION = "8.15.9"
