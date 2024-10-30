@@ -1,5 +1,5 @@
 <script>
-	import Roadmap from '../../assets/_roadmap.png';
+	import Roadmap from '../../assets/__roadmap.png';
 	import Bg from '../../assets/rose_red.svg';
 
 	export let items = [
