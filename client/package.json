@@ -11,7 +11,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"test:playwright": "playwright test",
-		"test": "pnpm test:unit run && pnpm test:playwright",
+		"test": "npm test:unit run && npm test:playwright",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"typesafe-i18n": "typesafe-i18n"
@@ -20,7 +20,7 @@
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-netlify": "^0.0.13",
 		"@sveltejs/adapter-static": "^0.0.17",
-		"@sveltejs/kit": "^2.7.3",
+		"@sveltejs/kit": "^0.0.30",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
