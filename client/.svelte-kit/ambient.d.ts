@@ -69,6 +69,7 @@ declare module '$env/static/private' {
 	export const npm_config_globalconfig: string;
 	export const npm_config_global_prefix: string;
 	export const npm_config_init_module: string;
+	export const npm_config_legacy_peer_deps: string;
 	export const npm_config_local_prefix: string;
 	export const npm_config_node_gyp: string;
 	export const npm_config_noproxy: string;
@@ -210,6 +211,7 @@ declare module '$env/dynamic/private' {
 		npm_config_globalconfig: string;
 		npm_config_global_prefix: string;
 		npm_config_init_module: string;
+		npm_config_legacy_peer_deps: string;
 		npm_config_local_prefix: string;
 		npm_config_node_gyp: string;
 		npm_config_noproxy: string;

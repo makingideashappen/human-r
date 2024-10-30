@@ -42,6 +42,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-netlify": "^4.3.6",
 		"@ts-stack/markdown": "^1.5.0",
 		"axios": "^1.7.2",
 		"marked": "^13.0.0",
